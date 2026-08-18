@@ -26,7 +26,7 @@ export default function HomePage() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-bone-dim">
+    <section className="relative overflow-hidden bg-[#E5DFD2]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ function Hero() {
             alt="A considered still life of Meridian goods"
             className="h-full w-full object-cover"
           />
-          <div className="absolute bottom-5 left-5 right-5 sm:right-auto rounded-lg bg-bone/95 backdrop-blur-sm p-4 shadow-[var(--shadow-pop)] flex items-center gap-3">
+          {/* <div className="absolute bottom-5 left-5 right-5 sm:right-auto rounded-lg bg-bone/95 backdrop-blur-sm p-4 shadow-[var(--shadow-pop)] flex items-center gap-3">
             <div className="h-11 w-11 rounded-md bg-sand overflow-hidden shrink-0">
               <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=200&q=80" alt="" className="h-full w-full object-cover" />
             </div>
@@ -74,7 +74,7 @@ function Hero() {
               <p className="text-sm font-medium text-ink">Studio Ceramic Vase</p>
               <p className="text-xs text-ink/50">Rs. 4,200</p>
             </div>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>
@@ -190,7 +190,7 @@ function TrustSection() {
           Quality you can trust, shipped to your door
         </h2>
         <p className="mt-4 text-bone/60 max-w-md mx-auto">
-          Every order is backed by our 14-day return policy and cash-on-delivery convenience.
+          Every order is backed by our cash-on-delivery convenience.
         </p>
         <Link to="/products" className="inline-block mt-8">
           <Button variant="secondary" size="lg">Start Shopping</Button>

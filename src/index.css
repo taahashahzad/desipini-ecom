@@ -3,221 +3,95 @@
 
 /* =====================================================================
    MERIDIAN DESIGN SYSTEM
-   Bright editorial luxury — warm cream, vibrant emerald,
-   vivid coral, and rich plum ink.
+   Warm golden-tan & soft cream palette with an amber-gold primary and
+   a rust-terracotta accent reserved for sale/discount signaling.
+   Editorial serif display type paired with a quiet grotesque body face.
    ===================================================================== */
 
 @theme {
-  /* =================================================================
-     NEUTRALS
-     ================================================================= */
+  /* Color: neutrals */
+  --color-ink: #2b2013;
+  --color-ink-soft: #4a3a22;
+  --color-bone: #fbf6e8;
+  --color-bone-dim: #f3e8c8;
+  --color-sand: #eed7a3;
+  --color-sand-line: #dcc183;
 
-  --color-ink: #211d35;
-  --color-ink-soft: #3b3452;
-  --color-ink-muted: #716a82;
+  /* Color: brand */
+  --color-moss: #b9862e;
+  --color-moss-dark: #8c6321;
+  --color-moss-light: #d9ae5f;
+  --color-clay: #c1553b;
+  --color-clay-light: #dd8267;
+  --color-gold: #d4a017;
 
-  --color-bone: #fffaf5;
-  --color-bone-dim: #fff3e8;
+  /* Semantic */
+  --color-success: #4c7a3d;
+  --color-danger: #b23a2e;
+  --color-warning: #c1861f;
 
-  --color-sand: #f5e5d5;
-  --color-sand-line: #e5d1bd;
-
-  --color-white: #ffffff;
-
-
-  /* =================================================================
-     BRAND — BRIGHTER EMERALD
-     ================================================================= */
-
-  --color-moss: #12b886;
-  --color-moss-dark: #07966d;
-  --color-moss-light: #4fe0b0;
-  --color-moss-pale: #d9f8ee;
-
-
-  /* =================================================================
-     CORAL — BRIGHTER ACCENT
-     ================================================================= */
-
-  --color-clay: #ff6045;
-  --color-clay-dark: #ef4b32;
-  --color-clay-light: #ff927d;
-  --color-clay-pale: #ffe2dc;
-
-
-  /* =================================================================
-     GOLD
-     ================================================================= */
-
-  --color-gold: #f5b63f;
-  --color-gold-light: #ffd166;
-  --color-gold-pale: #fff0c9;
-
-
-  /* =================================================================
-     SEMANTIC
-     ================================================================= */
-
-  --color-success: #18b957;
-  --color-danger: #ef4050;
-  --color-warning: #f6ad2f;
-  --color-info: #3b82f6;
-
-
-  /* =================================================================
-     FONTS
-     ================================================================= */
-
+  /* Fonts */
   --font-display: "Fraunces", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
-
-  /* =================================================================
-     RADIUS
-     ================================================================= */
-
+  /* Radius: modest, editorial - not bubbly */
   --radius-xs: 3px;
   --radius-sm: 5px;
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 18px;
-  --radius-2xl: 24px;
 
+  /* Shadows: soft, low-contrast, warm-tinted */
+  --shadow-card: 0 1px 2px rgba(23, 31, 27, 0.04), 0 2px 12px rgba(23, 31, 27, 0.06);
+  --shadow-card-hover: 0 4px 10px rgba(23, 31, 27, 0.06), 0 12px 28px rgba(23, 31, 27, 0.10);
+  --shadow-pop: 0 8px 30px rgba(23, 31, 27, 0.16);
 
-  /* =================================================================
-     SHADOWS
-     ================================================================= */
-
-  --shadow-card:
-    0 1px 2px rgba(30, 27, 46, 0.04),
-    0 4px 14px rgba(30, 27, 46, 0.07);
-
-  --shadow-card-hover:
-    0 5px 12px rgba(30, 27, 46, 0.07),
-    0 16px 32px rgba(30, 27, 46, 0.12);
-
-  --shadow-pop:
-    0 10px 35px rgba(30, 27, 46, 0.18);
-
-  --shadow-moss:
-    0 8px 24px rgba(18, 184, 134, 0.22);
-
-  --shadow-clay:
-    0 8px 24px rgba(255, 96, 69, 0.22);
-
-
-  /* =================================================================
-     ANIMATIONS
-     ================================================================= */
-
-  --animate-fade-up:
-    fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-
-  --animate-fade-in:
-    fade-in 0.4s ease both;
-
-  --animate-marquee:
-    marquee 28s linear infinite;
-
-  --animate-glow:
-    glow 2.5s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 0.4s ease both;
+  --animate-marquee: marquee 28s linear infinite;
 }
-
-
-/* =====================================================================
-   KEYFRAMES
-   ===================================================================== */
 
 @keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
 @keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
-
-@keyframes glow {
-  0%,
-  100% {
-    box-shadow: 0 0 0 rgba(18, 184, 134, 0);
-  }
-
-  50% {
-    box-shadow: 0 0 30px rgba(18, 184, 134, 0.20);
-  }
-}
-
-
-/* =====================================================================
-   BASE
-   ===================================================================== */
 
 @layer base {
-
   * {
     border-color: var(--color-sand-line);
   }
-
   html {
     scroll-behavior: smooth;
   }
-
   body {
     background-color: var(--color-bone);
     color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
   }
-
-  h1,
-  h2,
-  h3,
-  h4 {
+  h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.015em;
+    letter-spacing: -0.01em;
   }
-
   ::selection {
     background-color: var(--color-moss);
-    color: #ffffff;
+    color: var(--color-bone);
   }
-
   :focus-visible {
     outline: 2px solid var(--color-moss);
     outline-offset: 2px;
   }
-
   @media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
@@ -226,213 +100,18 @@
   }
 }
 
-
-/* =====================================================================
-   UTILITIES
-   ===================================================================== */
-
 @layer utilities {
-
   .text-balance {
     text-wrap: balance;
   }
-
-
-  /* ---------------------------------------------------------------
-     GRADIENT TEXT
-     --------------------------------------------------------------- */
-
-  .text-gradient {
-    background: linear-gradient(
-      135deg,
-      #0dbb87,
-      #16c99a
-    );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .text-gradient-coral {
-    background: linear-gradient(
-      135deg,
-      #ff6045,
-      #ff8a72
-    );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-
-  /* ---------------------------------------------------------------
-     BRAND GRADIENT
-     --------------------------------------------------------------- */
-
-  .bg-gradient-moss {
-    background: linear-gradient(
-      135deg,
-      #0f9f76 0%,
-      #12b886 55%,
-      #38d9a9 100%
-    );
-  }
-
-  .bg-gradient-coral {
-    background: linear-gradient(
-      135deg,
-      #ff5338 0%,
-      #ff6045 55%,
-      #ff866e 100%
-    );
-  }
-
-
-  /* ---------------------------------------------------------------
-     SOFT BACKGROUNDS
-     --------------------------------------------------------------- */
-
-  .bg-moss-soft {
-    background-color: var(--color-moss-pale);
-  }
-
-  .bg-clay-soft {
-    background-color: var(--color-clay-pale);
-  }
-
-  .bg-gold-soft {
-    background-color: var(--color-gold-pale);
-  }
-
-
-  /* ---------------------------------------------------------------
-     CARD
-     --------------------------------------------------------------- */
-
-  .card-premium {
-    background-color: #ffffff;
-    border: 1px solid var(--color-sand-line);
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-card);
-
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease,
-      border-color 0.25s ease;
-  }
-
-  .card-premium:hover {
-    transform: translateY(-4px);
-
-    border-color: rgba(18, 184, 134, 0.35);
-
-    box-shadow: var(--shadow-card-hover);
-  }
-
-
-  /* ---------------------------------------------------------------
-     BUTTONS
-     --------------------------------------------------------------- */
-
-  .btn-moss {
-    background: linear-gradient(
-      135deg,
-      #0f9f76,
-      #12b886
-    );
-
-    color: #ffffff;
-
-    box-shadow: var(--shadow-moss);
-
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease;
-  }
-
-  .btn-moss:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-      0 12px 30px rgba(18, 184, 134, 0.30);
-  }
-
-
-  .btn-clay {
-    background: linear-gradient(
-      135deg,
-      #ff5338,
-      #ff6045
-    );
-
-    color: #ffffff;
-
-    box-shadow: var(--shadow-clay);
-
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease;
-  }
-
-  .btn-clay:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-      0 12px 30px rgba(255, 96, 69, 0.30);
-  }
-
-
-  /* ---------------------------------------------------------------
-     GLOW
-     --------------------------------------------------------------- */
-
-  .glow-moss {
-    box-shadow:
-      0 0 40px rgba(18, 184, 134, 0.18);
-  }
-
-  .glow-clay {
-    box-shadow:
-      0 0 40px rgba(255, 96, 69, 0.16);
-  }
-
-
-  /* ---------------------------------------------------------------
-     SCROLLBAR
-     --------------------------------------------------------------- */
-
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
-
-  /* ---------------------------------------------------------------
-     NUMBERS
-     --------------------------------------------------------------- */
-
   .tabular-nums {
     font-variant-numeric: tabular-nums;
-  }
-
-
-  /* ---------------------------------------------------------------
-     HOVER
-     --------------------------------------------------------------- */
-
-  .hover-lift {
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease;
-  }
-
-  .hover-lift:hover {
-    transform: translateY(-3px);
   }
 }

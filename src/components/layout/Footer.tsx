@@ -23,15 +23,15 @@ export function Footer() {
           <div className="flex items-start gap-3">
             <RotateCcw className="h-5 w-5 text-moss shrink-0 mt-0.5" />
             <div>
-              <p className="text-sm font-semibold text-ink">Easy returns</p>
-              <p className="text-sm text-ink/55">14-day return window</p>
+              <p className="text-sm font-semibold text-ink">Reasonable Price</p>
+              <p className="text-sm text-ink/55">Affordable for everyone</p>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 py-12">
           <div className="col-span-2 sm:col-span-1">
-            <span className="font-display text-2xl text-ink">Meridian</span>
+            <span className="font-display text-2xl text-ink">DesiPini</span>
             <p className="mt-3 text-sm text-ink/55 max-w-xs">Considered goods, made to last. Thoughtfully sourced, honestly priced.</p>
             <div className="flex items-center gap-3 mt-4">
               <a href="#" aria-label="Instagram" className="h-7 w-7 rounded-full border border-sand-line flex items-center justify-center text-[10px] font-semibold text-ink/50 hover:text-ink hover:border-ink/40 transition-colors">IG</a>

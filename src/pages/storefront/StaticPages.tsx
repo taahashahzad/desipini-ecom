@@ -16,7 +16,7 @@ export function ReturnsPage() {
     <StaticPage title="Returns & Exchanges">
       <p>We accept returns within 14 days of delivery, provided items are unused, unworn, and in their original packaging.</p>
       <p>To start a return, reach out to our support team with your order number and we'll guide you through the process.</p>
-      <p>Refunds are processed within 5–7 business days of us receiving your returned item.</p>
+      {/* <p>Refunds are processed within 5–7 business days of us receiving your returned item.</p> */}
     </StaticPage>
   )
 }

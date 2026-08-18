@@ -50,7 +50,7 @@ export function Header() {
                 <Menu className="h-5 w-5" />
               </button>
               <Link to="/" className="font-display text-2xl tracking-tight text-ink pl-1 lg:pl-0">
-                Meridian
+                DesiPini
               </Link>
             </div>
 
