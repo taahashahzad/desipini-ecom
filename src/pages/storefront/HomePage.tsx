@@ -62,7 +62,7 @@ function Hero() {
           className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] rounded-xl overflow-hidden bg-sand"
         >
           <img
-            src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1200&q=80"
+            src="src\assets\pic.jpeg"
             alt="A considered still life of Meridian goods"
             className="h-full w-full object-cover"
           />
