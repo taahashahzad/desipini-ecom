@@ -42,7 +42,8 @@ function Hero() {
             Discover Products <br /> You&rsquo;ll Love
           </h1>
           <p className="mt-5 text-base sm:text-lg text-ink/60 max-w-md text-balance">
-            Honest materials, careful craft, and prices that make sense. Every piece in our shop is chosen — not just sold.
+            دیسی پِنی ،خالص ذائقہ، دیسی انداز
+آپ کے لیے روایتی ذائقے اور معیاری اجزاء سے تیار کردہ مزیدار مٹھائیاں پیش کی جاتی ہیں۔ ہر نوالے میں گھر جیسا خالص ذائقہ اور دیسی محبت کا احساس۔
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link to="/products">
