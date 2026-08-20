@@ -34,9 +34,9 @@ export function Footer() {
             <span className="font-display text-2xl text-ink">DesiPini</span>
             <p className="mt-3 text-sm text-ink/55 max-w-xs">Considered goods, made to last. Thoughtfully sourced, honestly priced.</p>
             <div className="flex items-center gap-3 mt-4">
-              <a href="#" aria-label="Instagram" className="h-7 w-7 rounded-full border border-sand-line flex items-center justify-center text-[10px] font-semibold text-ink/50 hover:text-ink hover:border-ink/40 transition-colors">IG</a>
-              <a href="#" aria-label="Twitter" className="h-7 w-7 rounded-full border border-sand-line flex items-center justify-center text-[10px] font-semibold text-ink/50 hover:text-ink hover:border-ink/40 transition-colors">X</a>
-              <a href="#" aria-label="Facebook" className="h-7 w-7 rounded-full border border-sand-line flex items-center justify-center text-[10px] font-semibold text-ink/50 hover:text-ink hover:border-ink/40 transition-colors">FB</a>
+              <a href="https://www.instagram.com/desipini.pk?igsh=MTNubzc2cHQ2dGN6NQ%3D%3D&utm_source=qr&wa_status_inline=true" aria-label="Instagram" className="h-7 w-7 rounded-full border border-sand-line flex items-center justify-center text-[10px] font-semibold text-ink/50 hover:text-ink hover:border-ink/40 transition-colors">IG</a>
+              {/* <a href="#" aria-label="Twitter" className="h-7 w-7 rounded-full border border-sand-line flex items-center justify-center text-[10px] font-semibold text-ink/50 hover:text-ink hover:border-ink/40 transition-colors">X</a>
+              <a href="#" aria-label="Facebook" className="h-7 w-7 rounded-full border border-sand-line flex items-center justify-center text-[10px] font-semibold text-ink/50 hover:text-ink hover:border-ink/40 transition-colors">FB</a> */}
             </div>
           </div>
           <FooterCol title="Shop" links={[
