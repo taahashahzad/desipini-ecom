@@ -10,6 +10,8 @@ import { Button } from '@/components/ui/Button'
 import { useCategories } from '@/hooks/useCommon'
 import { EmptyState } from '@/components/ui/EmptyState'
 import { Package } from 'lucide-react'
+import pic from '@/assets/pic.jpeg';
+
 
 export default function HomePage() {
   return (
@@ -62,7 +64,7 @@ function Hero() {
           className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] rounded-xl overflow-hidden bg-sand"
         >
           <img
-            src="src\assets\pic.jpeg"
+            src={pic}
             alt="A considered still life of Meridian goods"
             className="h-full w-full object-cover"
           />
