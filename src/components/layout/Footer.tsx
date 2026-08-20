@@ -51,13 +51,13 @@ export function Footer() {
           ]} />
           <FooterCol title="Support" links={[
             { label: 'Shipping Info', to: '/shipping' },
-            { label: 'Returns', to: '/returns' },
+            // { label: 'Returns', to: '/returns' },
             { label: 'Contact Us', to: '/contact' },
           ]} />
         </div>
 
         <div className="pt-6 border-t border-sand-line flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-ink/40">© {new Date().getFullYear()} Meridian. All rights reserved.</p>
+          <p className="text-xs text-ink/40">© {new Date().getFullYear()} DesiPini. All rights reserved.</p>
           <p className="text-xs text-ink/40">Cash on Delivery available nationwide</p>
         </div>
       </div>

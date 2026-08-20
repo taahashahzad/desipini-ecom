@@ -12,7 +12,7 @@ export function AuthLayout({ title, subtitle, children }: { title: string; subti
         className="w-full max-w-sm"
       >
         <div className="text-center mb-8">
-          <Link to="/" className="font-display text-3xl text-ink">Meridian</Link>
+          <Link to="/" className="font-display text-3xl text-ink">DesiPini</Link>
           <h1 className="font-display text-xl text-ink mt-6">{title}</h1>
           {subtitle && <p className="text-sm text-ink/55 mt-1.5">{subtitle}</p>}
         </div>
