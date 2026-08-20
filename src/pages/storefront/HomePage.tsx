@@ -35,8 +35,8 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide uppercase text-moss-dark bg-moss/10 border border-moss/20 rounded-full px-3 py-1 mb-6">
-            <Sparkles className="h-3 w-3" /> ✦ ہر موقع کے لیے بہترین انتخاب ✦
+          <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-moss-dark bg-moss/10 border border-moss/20 rounded-full px-5 py-2.5 mb-6">
+            <Sparkles className="h-4 w-4" /> ✦ ہر موقع کے لیے بہترین انتخاب ✦
           </span>
           <h1 className="font-display text-4xl sm:text-6xl leading-[1.05] text-ink text-balance">
             Discover Products <br /> You&rsquo;ll Love
